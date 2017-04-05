@@ -2,4 +2,4 @@
 ## Avance 1
 
 **Tipo de datos:** Datos ddRAD de Alicia Mastretta.
-**Tipo de análisis:** estructura y diversidad genética
+**Tipo de análisis:** estructura y diversidad genética (Ho, diversidad nucleotidica, FST).
