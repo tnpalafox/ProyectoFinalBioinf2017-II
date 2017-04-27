@@ -26,12 +26,5 @@ es posible examinar las lecturas crudas de una secuencia de secuenciación de Il
 
 
 
-| **Este programa puede:** | 
-| Manejar datos que están codificados en un código de barras, o sin codificar.|
-|Usar códigos de barras combinados.|
-|Comprueba y corrige el sitio de corte de las enzimas de restricción para datos digeridos una o dos veces.|       
-|Procesar archivos individuales o todo un directorio de archivos.| 
-|Leer/escribir directamente datos comprimidos|
-|Nombrar archivos de salida de acuerdo con sus nombres de ejemplo en lugar de nombres de código de barras.|
-​
-​
+|**Este programa puede**|
+|Manejar datos que están codificados en un código de barras, o sin codificar.|
