@@ -3,11 +3,11 @@
 Contiene los scripts de la línea de comando que se utilizaron para  demultiplexar los datos crudos.
 
 ## Partes del repositorio:
-+ [1. Línea de comando de Limpieza y Demultiplexeo](./1Limpieza_Demultiplexeo) aquí se encuentra el script que se utilizó para demultiplexear las lecturas crudas.
+[1. Línea de comando de Limpieza y Demultiplexeo](./1Limpieza_Demultiplexeo) aquí se encuentra el script que se utilizó para demultiplexear las lecturas crudas.
 
 En mi trabajo la línea de comando de limpieza y demultiplexeo es el script 1
 
-###1 Línea de comando Limpieza/Demultiplexeo
+### 1 Línea de comando Limpieza/Demultiplexeo
 ---------------------------
 Aquí vive el script usado para demultiplexear las lecturas crudas. Utilicé la línea de comando de Stacks [ *process_radtags*, Catchen, 2017.](http://catchenlab.life.illinois.edu/stacks/comp/process_radtags.php) Con esta línea de comando 
 es posible examinar las lecturas crudas de una secuencia de secuenciación de Illumina (que es el tipo de datos con los que cuento) y:
