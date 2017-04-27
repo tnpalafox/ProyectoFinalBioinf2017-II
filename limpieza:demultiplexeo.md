@@ -1,4 +1,4 @@
-#RESUMEN STACKS
+# RESUMEN STACKS
 
 Contiene los scripts de la línea de comando que se utilizaron para  demultiplexar los datos crudos.
 
