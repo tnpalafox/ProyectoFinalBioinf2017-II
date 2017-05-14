@@ -1,17 +1,17 @@
 Aquí están las líneas de comando que he utilizado sin éxito alguno..
 
-**Utilizando db=sequence**
-```
+Utilizando db=sequence
+
 curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=sequences&id=SRX435319,SRX435317,SRX435316,SRX435315,SRX435314,SRX435313,SRX435312,SRX435311,SRX435310,SRX435309,SRX435308,SRX435307,SRX435306,SRX435305,SRX435304,SRX435303,SRX435302,SRX435301,SRX435300,SRX435299,SRX435298,SRX435297,SRX435296,SRX435295,SRX435294,SRX435293,SRX435292,SRX435291,SRX435290,SRX435289,SRX435288,SRX435287,SRX435286,SRX435285,SRX435284,SRX435283,SRX435282,SRX435281,SRX435280,SRX435279,SRX435278,SRX435277,SRX435276,SRX435275,SRX435274,SRX435273,SRX435272,SRX435271,SRX435270,SRX435269,SRX435268,SRX435267,SRX435266,SRX435265,SRX435264,SRX435263,SRX435262,SRX435261,SRX435260,SRX435259,SRX435258,SRX435257,SRX435256,SRX435255,SRX435254,SRX435253,SRX435252,SRX435251,SRX435250,SRX435249,SRX435248,SRX435247,SRX435246,SRX435245,SRX435244,SRX435243,SRX435242,SRX435241,SRX435240,SRX435239,SRX435238,SRX435237,SRX435236,SRX435235,SRX435234,SRX435233,SRX435232,SRX435231,SRX435230,SRX435229,SRX435228,SRX435227,SRX435226,SRX435225" ; 
-```
 
-**Utilizando db=nucleotide**
-```
+
+Utilizando db=nucleotide
+
 curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nucleotide&id=SRX435319,SRX435317,SRX435316,SRX435315,SRX435314,SRX435313,SRX435312,SRX435311,SRX435310,SRX435309,SRX435308,SRX435307,SRX435306,SRX435305,SRX435304,SRX435303,SRX435302,SRX435301,SRX435300,SRX435299,SRX435298,SRX435297,SRX435296,SRX435295,SRX435294,SRX435293,SRX435292,SRX435291,SRX435290,SRX435289,SRX435288,SRX435287,SRX435286,SRX435285,SRX435284,SRX435283,SRX435282,SRX435281,SRX435280,SRX435279,SRX435278,SRX435277,SRX435276,SRX435275,SRX435274,SRX435273,SRX435272,SRX435271,SRX435270,SRX435269,SRX435268,SRX435267,SRX435266,SRX435265,SRX435264,SRX435263,SRX435262,SRX435261,SRX435260,SRX435259,SRX435258,SRX435257,SRX435256,SRX435255,SRX435254,SRX435253,SRX435252,SRX435251,SRX435250,SRX435249,SRX435248,SRX435247,SRX435246,SRX435245,SRX435244,SRX435243,SRX435242,SRX435241,SRX435240,SRX435239,SRX435238,SRX435237,SRX435236,SRX435235,SRX435234,SRX435233,SRX435232,SRX435231,SRX435230,SRX435229,SRX435228,SRX435227,SRX435226,SRX435225" ; 
-```
 
-**Me salió este chorizote:**
-```
+
+Me salió este chorizote:
+
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE eSummaryResult PUBLIC "-//NLM//DTD esummary v1 20041029//EN" "https://eutils.ncbi.nlm.nih.gov/eutils/dtd/20041029/esummary-v1.dtd">
 <eSummaryResult>
@@ -110,20 +110,20 @@ curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nucleotide
     <ERROR>Invalid uid SRX435226 at position=919</ERROR>
     <ERROR>Invalid uid SRX435225 at position=929</ERROR>
 </eSummaryResult>
-```
 
-**Volviéndolo a correr : ** 
-```
+
+Volviéndolo a correr : 
+
 curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nucleotide&id=SRX435319,SRX435317,SRX435316,SRX435315,SRX435314,SRX435313,SRX435312,SRX435311,SRX435310,SRX435309,SRX435308,SRX435307,SRX435306,SRX435305,SRX435304,SRX435303,SRX435302,SRX435301,SRX435300,SRX435299,SRX435298,SRX435297,SRX435296,SRX435295,SRX435294,SRX435293,SRX435292,SRX435291,SRX435290,SRX435289,SRX435288,SRX435287,SRX435286,SRX435285,SRX435284,SRX435283,SRX435282,SRX435281,SRX435280,SRX435279,SRX435278,SRX435277,SRX435276,SRX435275,SRX435274,SRX435273,SRX435272,SRX435271,SRX435270,SRX435269,SRX435268,SRX435267,SRX435266,SRX435265,SRX435264,SRX435263,SRX435262,SRX435261,SRX435260,SRX435259,SRX435258,SRX435257,SRX435256,SRX435255,SRX435254,SRX435253,SRX435252,SRX435251,SRX435250,SRX435249,SRX435248,SRX435247,SRX435246,SRX435245,SRX435244,SRX435243,SRX435242,SRX435241,SRX435240,SRX435239,SRX435238,SRX435237,SRX435236,SRX435235,SRX435234,SRX435233,SRX435232,SRX435231,SRX435230,SRX435229,SRX435228,SRX435227,SRX435226,SRX435225" ;
-```
 
-**Ahora me salió esto:**
-```
+
+Ahora me salió esto:
+
 -bash:  fork: Resource temporarily unavailable
-```
 
-**Intentándolo de otro modo:**
-```
+
+Intentándolo de otro modo:
+
 while read line
 > do
 > curl https://www.ncbi.nlm.nih.gov/sra/?term=SRP035472 > $line.gz
@@ -149,24 +149,23 @@ clear
                                  Dload  Upload   Total   Spent    Left  Speed
 100   99k    0   99k    0     0  67834      0 --:--:--  0:00:01 --:--:-- 67833
 ^C
-```
 
 
 Y nunca bajó nada
 
 
-**Poniendo directamente  la página en de NCBI donde están tus datos**
-```
+Poniendo directamente  la página en de NCBI donde están tus datos
+
 curl https://www.ncbi.nlm.nih.gov/sra/?term=SRP035472  
-```
 
-**Con la flag -s**
-```
+
+Con la flag -s
+
 curl -s https://www.ncbi.nlm.nih.gov/sra/?term=SRP035472  
-```
-**Y me salió este chorizote que no tengo idea que es**
 
-```
+Y me salió este chorizote que no tengo idea que es
+
+
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -310,12 +309,12 @@ var ActiveNames = {"p$ExL":1, "EntrezSystem2.PEntrez.DbConnector.Cmd":0, "Entrez
             
         </div>
         <div><div class="rprt"><div class="rprtnum nohighlight"><label for="UidCheckBox611978" class="ui-helper-hidden-accessible">Select item 611978</label><input name="EntrezSystem2.PEntrez.Sra.Sra_ResultsPanel.Sra_RVDocSum.uid" sid="1" type="checkbox" id="UidCheckBox611978" value="611978" /><span>1.</span></div><div class="rslt"><p class="title"><a href="/sra/SRX435320[accn]" ref="ordinalpos=1&amp;ncbi_uid=611978&amp;link_uid=611978">"double digest RAD data from Berberis alpina (Berberidaceae), B. moranensis, B. pallida and B. trifolia from the Transmexican Volcanic Belt and Sierra Madre Oriental, Mexico-ZaB06_r"</a></p><div class="supp"><p class="details expand e-hidden">1 ILLUMINA (Illumina HiSeq 2000) run: 420,118 spots, 34.9M bases, 19.4Mb downloads</p></div><div class="aux"><div class="resc"><dl class="rprtid"><dt>Accession: </dt> <dd>SRX435320</dd></dl></div><p class="links nohighlight"></p></div></div></div><div class="rprt"><div class="rprtnum nohighlight"><label for="UidCheckBox611977" class="ui-helper-hidden-accessible">Select item 611977</label><input name="EntrezSystem2.PEntrez.Sra.Sra_ResultsPanel.Sra_RVDocSum.uid" sid="2" type="checkbox" id="UidCheckBox611977" value="611977" /><span>2.</span></div><div class="rslt"><p class="title"><a href="/sra/SRX435319[accn]" ref="ordinalpos=2&amp;ncbi_uid=611977&amp;link_uid=611977">"double digest RAD data from Berberis alpina (Berberidaceae), B. moranensis, B. pallida and B. trifolia from the Transmexican Volcanic Belt and Sierra Madre Oriental, Mexico-ZaB06"</a></p><div class="supp"><p class="details expand e-hidden">1 ILLUMINA (Illumina HiSeq 2000) run: 584,115 spots, 48.5M bases, 27.2Mb downloads</p></div><div class="aux"><div class="resc"><dl class="rprtid"><dt>Accession: </dt> <dd>SRX435319</dd></dl></div><p class="links nohighlight"></p></div></div></div><div class="rprt"><div class="rprtnum nohighlight"><label for="UidCheckBox611976" class="ui-helper-hidden-accessible">Select item 611976</label><input name="EntrezSystem2.PEntrez.Sra.Sra_ResultsPanel.Sra_RVDocSum.uid" sid="3" type="checkbox" id="UidCheckBox611976" value="611976" /><span>3.</span></div><div class="rslt"><p class="title"><a href="/sra/SRX435318[accn]" ref="ordinalpos=3&amp;ncbi_uid=611976&amp;link_uid=611976">"double digest RAD data from Berberis alpina (Berberidaceae), B. moranensis, B. pallida and B. trifolia from the Transmexican Volcanic Belt and Sierra Madre Oriental, Mexico-ZaB05"</a></p><div class="supp"><p class="details expand e-hidden">1 ILLUMINA (Illumina HiSeq 2000) run: 3 spots, 249 bases, 30,630b downloads</p></div><div class="aux"><div class="resc"><dl class="rprtid"><dt>Accession: </dt> <dd>SRX435318</dd></dl></div><p class="links nohighlight"></p></div></div></div><div class="rprt"><div class="rprtnum nohighlight"><label for="UidCheckBox611975" class="ui-helper-hidden-accessible">Select item 611975</label><input name="EntrezSystem2.PEntrez.Sra.Sra_ResultsPanel.Sra_RVDocSum.uid" sid="4" type="checkbox" id="UidCheckBox611975" value="611975" /><span>4.</span></div><div class="rslt"><p class="title"><a href="/sra/SRX435317[accn]" ref="ordinalpos=4&amp;ncbi_uid=611975&amp;link_uid=611975">"double digest RAD data from Berberis alpina (Berberidaceae), B. moranensis, B. pallida and B. trifolia from the Transmexican Volcanic Belt and Sierra Madre Oriental, Mexico-ZaB04"</a></p><div class="supp"><p class="details expand e-hidden">1 ILLUMINA (Illumina HiSeq 2000) run: 1.5M spots, 121.6M bases, 77.5Mb downloads</p></div><div class="aux"><div class="resc"><dl class="rprtid"><dt>Accession: </dt> <dd>SRX435317</dd></dl></div><p class="links nohighlight"></p></div></div></div><div class="rprt"><div class="rprtnum nohighlight"><label for="UidCheckBox611974" class="ui-helper-hidden-accessible">Select item 611974</label><input name="EntrezSystem2.PEntrez.Sra.Sra_ResultsPanel.Sra_RVDocSum.uid" sid="5" type="checkbox" id="UidCheckBox611974" value="611974" /><span>5.</span></div><div class="rslt"><p class="title"><a href="/sra/SRX435316[accn]" ref="ordinalpos=5&amp;ncbi_uid=611974&amp;link_uid=611974">"double digest RAD data from Berberis alpina (Berberidaceae), B. moranensis, B. pallida and B. trifolia from the Transmexican Volcanic Belt and Sierra Madre Oriental, Mexico-ZaB03"</a></p><div class="supp"><p class="details expand e-hidden">1 ILLUMINA (Illumina HiSeq 2000) run: 644,004 spots, 53.5M bases, 34.4Mb downloads</p></div><div class="aux"><div class="resc"><dl class="rprtid"><dt>Accession: </dt> <dd>SRX435316</dd></dl></div><p class="links nohighlight"></p></div></div></div><div class="rprt"><div class="rprtnum nohighlight"><label for="UidCheckBox611973" class="ui-helper-hidden-accessible">Select item 611973</label><input name="EntrezSystem2.PEntrez.Sra.Sra_ResultsPanel.Sra_RVDocSum.uid" sid="6" type="checkbox" id="UidCheckBox611973" value="611973" /><span>6.</span></div><div class="rslt"><p class="title"><a href="/sra/SRX435315[accn]" ref="ordinalpos=6&amp;ncbi_uid=611973&amp;link_uid=611973">"double digest RAD data from Berberis alpina (Berberidaceae), B. moranensis, B. pallida and B. trifolia from the Transmexican Volcanic Belt and Sierra Madre Oriental, Mexico-ZaB02"</a></p><div class="supp"><p class="details expand e-hidden">1 ILLUMINA (Illumina HiSeq 2000) run: 1.3M spots, 109.8M bases, 69.5Mb downloads</p></div><div class="aux"><div class="resc"><dl class="rprtid"><dt>Accession: </dt> <dd>SRX435315</dd></dl></div><p class="links nohighlight"></p></div></div></div><div class="rprt"><div class="rprtnum nohighlight"><label for="UidCheckBox611972" class="ui-helper-hidden-accessible">Select item 611972</label><input name="EntrezSystem2.PEntrez.Sra.Sra_ResultsPanel.Sra_RVDocSum.uid" sid="7" type="checkbox" id="UidCheckBox611972" value="611972" /><span>7.</span></div><div class="rslt"><p class="title"><a href="/sra/SRX435314[accn]" ref="ordinalpos=7&amp;ncbi_uid=611972&amp;link_uid=611972">"double digest RAD data from Berberis alpina (Berberidaceae), B. moranensis, B. pallida and B. trifolia from the Transmexican Volcanic Belt and Sierra Madre Oriental, Mexico-ZaB01"</a></p><div class="supp"><p class="details expand e-hidden">1 ILLUMINA (Illumina HiSeq 2000) run: 70,314 spots, 5.8M bases, 3.3Mb downloads</p></div><div class="aux"><div class="resc"><dl class="rprtid"><dt>Accession: </dt> <dd>SRX435314</dd></dl></div><p class="links nohighlight"></p></div></div></div><div class="rprt"><div class="rprtnum nohighlight"><label for="UidCheckBox611971" class="ui-helper-hidden-accessible">Select item 611971</label><input name="EntrezSystem2.PEntrez.Sra.Sra_ResultsPanel.Sra_RVDocSum.uid" sid="8" type="checkbox" id="UidCheckBox611971" value="611971" /><span>8.</span></div><div class="rslt"><p class="title"><a href="/sra/SRX435313[accn]" ref="ordinalpos=8&amp;ncbi_uid=611971&amp;link_uid=611971">"double digest RAD data from Berberis alpina (Berberidaceae), B. moranensis, B. pallida and B. trifolia from the Transmexican Volcanic Belt and Sierra Madre Oriental, Mexico-ToB25"</a></p><div class="supp"><p class="details expand e-hidden">1 ILLUMINA (Illumina HiSeq 2000) run: 3.2M spots, 268.3M bases, 169.7Mb downloads</p></div><div class="aux"><div class="resc"><dl class="rprtid"><dt>Accession: </dt> <dd>SRX435313</dd></dl></div><p class="links nohighlight"></p></div></div></div><div class="rprt"><div class="rprtnum nohighlight"><label for="UidCheckBox611970" class="ui-helper-hidden-accessible">Select item 611970</label><input name="EntrezSystem2.PEntrez.Sra.Sra_ResultsPanel.Sra_RVDocSum.uid" sid="9" type="checkbox" id="UidCheckBox611970" value="611970" /><span>9.</span></div><div class="rslt"><p class="title"><a href="/sra/SRX435312[accn]" ref="ordinalpos=9&amp;ncbi_uid=611970&amp;link_uid=611970">"double digest RAD data from Berberis alpina (Berberidaceae), B. moranensis, B. pallida and B. trifolia from the Transmexican Volcanic Belt and Sierra Madre Oriental, Mexico-ToB24"</a></p><div class="supp"><p class="details expand e-hidden">1 ILLUMINA (Illumina HiSeq 2000) run: 714,918 spots, 59.3M bases, 33Mb downloads</p></div><div class="aux"><div class="resc"><dl class="rprtid"><dt>Accession: </dt> <dd>SRX435312</dd></dl></div><p class="links nohighlight"></p></div></div></div><div class="rprt"><div class="rprtnum nohighlight"><label for="UidCheckBox611969" class="ui-helper-hidden-accessible">Select item 611969</label><input name="EntrezSystem2.PEntrez.Sra.Sra_ResultsPanel.Sra_RVDocSum.uid" sid="10" type="checkbox" id="UidCheckBox611969" value="611969" /><span>10.</span></div><div class="rslt"><p class="title"><a href="/sra/SRX435311[accn]" ref="ordinalpos=10&amp;ncbi_uid=611969&amp;link_uid=611969">"double digest RAD data from Berberis alpina (Berberidaceae), B. moranensis, B. pallida and B. trifolia from the Transmexican Volcanic Belt and Sierra Madre Oriental, Mexico-ToB23"</a></p><div class="supp"><p class="details expand e-hidden">1 ILLUMINA (Illumina HiSeq 2000) run: 909,977 spots, 75.5M bases, 42.1Mb downloads</p></div><div class="aux"><div class="resc"><dl class="rprtid"><dt>Accession: </dt> <dd>SRX435311</dd></dl></div><p class="links nohighlight"></p></div></div></div><div class="rprt"><div class="rprtnum nohighlight"><label for="UidCheckBox611968" class="ui-helper-hidden-accessible">Select item 611968</label><input name="EntrezSystem2.PEntrez.Sra.Sra_ResultsPanel.Sra_RVDocSum.uid" sid="11" type="checkbox" id="UidCheckBox611968" value="611968" /><span>11.</span></div><div class="rslt"><p class="title"><a href="/sra/SRX435310[accn]" ref="ordinalpos=11&amp;ncbi_uid=611968&amp;link_uid=611968">"double digest RAD data from Berberis alpina (Berberidaceae), B. moranensis, B. pallida and B. trifolia from the Transmexican Volcanic Belt and Sierra Madre Oriental, Mexico-ToB22"</a></p><div class="supp"><p class="details expand e-hidden">1 ILLUMINA (Illumina HiSeq 2000) run: 39,711 spots, 3.3M bases, 2.2Mb downloads</p></div><div class="aux"><div class="resc"><dl class="rprtid"><dt>Accession: </dt> <dd>SRX435310</dd></dl></div><p class="links nohighlight"></p></div></div></div><div class="rprt"><div class="rprtnum nohighlight"><label for="UidCheckBox611967" class="ui-helper-hidden-accessible">Select item 611967</label><input name="EntrezSystem2.PEntrez.Sra.Sra_ResultsPanel.Sra_RVDocSum.uid" sid="12" type="checkbox" id="UidCheckBox611967" value="611967" /><span>12.</span></div><div class="rslt"><p class="title"><a href="/sra/SRX435309[accn]" ref="ordinalpos=12&amp;ncbi_uid=611967&amp;link_uid=611967">"double digest RAD data from Berberis alpina (Berberidaceae), B. moranensis, B. pallida and B. trifolia from the Transmexican Volcanic Belt and Sierra Madre Oriental, Mexico-ToB08"</a></p><div class="supp"><p class="details expand e-hidden">1 ILLUMINA (Illumina HiSeq 2000) run: 646,195 spots, 53.6M bases, 30.4Mb downloads</p></div><div class="aux"><div class="resc"><dl class="rprtid"><dt>Accession: </dt> <dd>SRX435309</dd></dl></div><p class="links nohighlight"></p></div></div></div><div class="rprt"><div class="rprtnum nohighlight"><label for="UidCheckBox611966" class="ui-helper-hidden-accessible">Select item 611966</label><input name="EntrezSystem2.PEntrez.Sra.Sra_ResultsPanel.Sra_RVDocSum.uid" sid="13" type="checkbox" id="UidCheckBox611966" value="611966" /><span>13.</span></div><div class="rslt"><p class="title"><a href="/sra/SRX435308[accn]" ref="ordinalpos=13&amp;ncbi_uid=611966&amp;link_uid=611966">"double digest RAD data from Berberis alpina (Berberidaceae), B. moranensis, B. pallida and B. trifolia from the Transmexican Volcanic Belt and Sierra Madre Oriental, Mexico-ToB07"</a></p><div class="supp"><p class="details expand e-hidden">1 ILLUMINA (Illumina HiSeq 2000) run: 968,695 spots, 80.4M bases, 45.2Mb downloads</p></div><div class="aux"><div class="resc"><dl class="rprtid"><dt>Accession: </dt> <dd>SRX435308</dd></dl></div><p class="links nohighlight"></p></div></div></div><div class="rprt"><div class="rprtnum nohighlight"><label for="UidCheckBox611965" class="ui-helper-hidden-accessible">Select item 611965</label><input name="EntrezSystem2.PEntrez.Sra.Sra_ResultsPanel.Sra_RVDocSum.uid" sid="14" type="checkbox" id="UidCheckBox611965" value="611965" /><span>14.</span></div><div class="rslt"><p class="title"><a href="/sra/SRX435307[accn]" ref="ordinalpos=14&amp;ncbi_uid=611965&amp;link_uid=611965">"double digest RAD data from Berberis alpina (Berberidaceae), B. moranensis, B. pallida and B. trifolia from the Transmexican Volcanic Belt and Sierra Madre Oriental, Mexico-ToB05"</a></p><div class="supp"><p class="details expand e-hidden">1 ILLUMINA (Illumina HiSeq 2000) run: 561,807 spots, 46.6M bases, 29.9Mb downloads</p></div><div class="aux"><div class="resc"><dl class="rprtid"><dt>Accession: </dt> <dd>SRX435307</dd></dl></div><p class="links nohighlight"></p></div></div></div><div class="rprt"><div class="rprtnum nohighlight"><label for="UidCheckBox611964" class="ui-helper-hidden-accessible">Select item 611964</label><input name="EntrezSystem2.PEntrez.Sra.Sra_ResultsPanel.Sra_RVDocSum.uid" sid="15" type="checkbox" id="UidCheckBox611964" value="611964" /><span>15.</span></div><div class="rslt"><p class="title"><a href="/sra/SRX435306[accn]" ref="ordinalpos=15&amp;ncbi_uid=611964&amp;link_uid=611964">"double digest RAD data from Berberis alpina (Berberidaceae), B. moranensis, B. pallida and B. trifolia from the Transmexican Volcanic Belt and Sierra Madre Oriental, Mexico-ToB04"</a></p><div class="supp"><p class="details expand e-hidden">1 ILLUMINA (Illumina HiSeq 2000) run: 863,546 spots, 71.7M bases, 39.9Mb downloads</p></div><div class="aux"><div class="resc"><dl class="rprtid"><dt>Accession: </dt> <dd>SRX435306</dd></dl></div><p class="links nohighlight"></p></div></div></div><div class="rprt"><div class="rprtnum nohighlight"><label for="UidCheckBox611963" class="ui-helper-hidden-accessible">Select item 611963</label><input name="EntrezSystem2.PEntrez.Sra.Sra_ResultsPanel.Sra_RVDocSum.uid" sid="16" type="checkbox" id="UidCheckBox611963" value="611963" /><span>16.</span></div><div class="rslt"><p class="title"><a href="/sra/SRX435305[accn]" ref="ordinalpos=16&amp;ncbi_uid=611963&amp;link_uid=611963">"double digest RAD data from Berberis alpina (Berberidaceae), B. moranensis, B. pallida and B. trifolia from the Transmexican Volcanic Belt and Sierra Madre Oriental, Mexico-ToB03_r"</a></p><div class="supp"><p class="details expand e-hidden">1 ILLUMINA (Illumina HiSeq 2000) run: 469,136 spots, 38.9M bases, 25Mb downloads</p></div><div class="aux"><div class="resc"><dl class="rpr
-```        
+        
        
         
 
-**Utilizando el truco para bajar en una sola línea de comando (ayuda de Biostars)**
-```
+Utilizando el truco para bajar en una sola línea de comando (ayuda de Biostars)
+
 cat keywordTableSortedUniqueIds.txt
 SRX435319
 SRX435317
@@ -418,4 +417,4 @@ while read line
 do
 curl https://www.ncbi.nlm.nih.gov/sra/?term=SRP035472 > $line.gz
 done
-```
+
