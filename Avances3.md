@@ -9,8 +9,8 @@ Hasta el día de hoy
 |Instalar UNEAK| <span style="color:green"> ![alt text](http://wiki.computerharpoon.com/images/1/15/Checked.png)</span> |
 |Unzip datos crudos a formato .fastq | <span style="color:green"> ![alt text](http://wiki.computerharpoon.com/images/1/15/Checked.png)</span> |
 |Ensamblado de novo| <span style="color:red"> **X**</span> | 
-|Análisis genética de poblaciones| <span style="color:red"> **X**</span> |
 |Análisis de Componentes Principales con SNPRelate | <span style="color:red"> **X**</span> |
+|Análisis genética de poblaciones| <span style="color:red"> **X**</span> |
 |Repositorio final|<span style="color:red"> **X**</span> |
 |[README](https://github.com/tnpalafox/ProyectoFinalBioinf2017-II/blob/master/README.md) | <span style="color:purple"> **Ya merito, aquí un avance**</span> |
 
